@@ -1,0 +1,12 @@
+@(message: String, userForm:Form[String])
+
+@import helper._
+
+@main(message) {
+    <h1>This is my chat application</h1>
+    What's your name? 
+    @form(routes.Application.chatRoom){
+ 	   <dd><input type="text" id="user" name="user" value="" ></dd>
+    	<input type="submit" value="Enter"/>
+    }
+}
